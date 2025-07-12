@@ -10,10 +10,13 @@
       --pink: #f48fb1;
     }
 
-  body {
+body {
   margin: 0;
   background: url('images/background.jpg') no-repeat center center fixed;
   background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
   color: var(--white);
   font-family: Arial, sans-serif;
 }
@@ -289,14 +292,28 @@
     font-size: 0.95em;
   }
 
-  footer a {
-    display: inline-block;
-    margin: 6px;
-    font-size: 1em;
-    padding: 8px 14px;
-    border: 2px solid var(--pink);
-    border-radius: 5px;
-  }
+footer a {
+  color: var(--pink);
+  text-decoration: none;
+  margin: 0 10px;
+  white-space: nowrap;
+  font-size: 1em;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
 }
 }
   </style>
