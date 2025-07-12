@@ -11,14 +11,14 @@
       --pink: #f48fb1;
     }
 
-body {
+ body {
   margin: 0;
-  background: url('images/background.jpg') no-repeat center center;
+  background: url('images/background.jpg') no-repeat center center fixed;
   background-size: cover;
-  background-attachment: scroll;
   color: var(--white);
   font-family: Arial, sans-serif;
 }
+
 
     header {
       text-align: center;
@@ -221,6 +221,16 @@ body {
 }
   
   @media (max-width: 768px) {
+     body {
+    background-attachment: scroll;
+    background-position: center top;
+    background-size: cover;
+  }
+
+  footer p {
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
   .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
