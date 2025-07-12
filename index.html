@@ -219,6 +219,58 @@
       }
     }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.portfolio-grid img {
+  width: 300px;
+  max-width: 90vw;
+  border-radius: 10px;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+  .portfolio-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio-grid img {
+    width: 90vw;
+  }
+
+  .about-price {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about,
+  .price {
+    width: 90%;
+    text-align: center;
+  }
+
+  header .socials {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  header img {
+    max-width: 80vw;
+    height: auto;
+  }
+}
   </style>
 </head>
 <body>
