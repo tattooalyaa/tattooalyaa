@@ -1,0 +1,289 @@
+<html lang="ru"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tattooalyaa</title>
+  <style>
+    :root {
+      --black: #000000;
+      --white: #ffffff;
+      --pink: #f48fb1;
+    }
+
+  body {
+  margin: 0;
+  background: url('images/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: var(--white);
+  font-family: Arial, sans-serif;
+}
+
+    header {
+      text-align: center;
+      padding: 10px 20px 0px;
+    }
+
+    .header-links a {
+      color: var(--pink);
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1.2em;
+      transition: color 0.3s;
+    }
+
+    .header-links a:hover {
+      text-decoration: underline;
+      color: #fff;
+    }
+
+    .logo-image {
+      margin-top: 20px;
+      height: 300px;
+      object-fit: contain;
+    }
+
+    section {
+      padding: 0px 20px 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    section h2 {
+      color: var(--pink);
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 2em;
+    }
+.site-subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.subtitle-line {
+  width: 100%;
+  text-align: center;
+  max-width: 600px;
+}
+
+.highlight {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--white);
+  font-family: Arial, sans-serif;
+}
+
+.separator {
+  font-size: 20px;
+  color: var(--pink);
+  margin: 5px 0;
+}
+
+.normal {
+  font-size: 18px;
+  color: var(--white);
+  font-family: Arial, sans-serif;
+}
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-gap: 20px;
+    }
+
+    .portfolio-grid img:nth-child(1) {
+      grid-column: 1 / span 2;
+    }
+
+    .portfolio-grid img:nth-child(2) {
+      grid-column: 3 / span 2;
+    }
+
+    .portfolio-grid img:nth-child(3) {
+      grid-column: 5 / span 2;
+    }
+
+    .portfolio-grid img:nth-child(4) {
+      grid-column: 2 / span 2;
+      margin-top: 20px;
+    }
+
+    .portfolio-grid img:nth-child(5) {
+      grid-column: 4 / span 2;
+      margin-top: 20px;
+    }
+
+    .portfolio-grid img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 3px solid var(--pink);
+      transition: transform 0.3s;
+    }
+
+    .portfolio-grid img:hover {
+      transform: scale(1.03);
+    }
+
+    .info-price-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 50px;
+    }
+
+    .info-price-block {
+      flex: 1 1 300px;
+      background-color: #111;
+      border: 2px solid var(--pink);
+      border-radius: 12px;
+      padding: 20px;
+      box-sizing: border-box;
+      max-width: 550px;
+    }
+
+    .info-price-block h2 {
+      text-align: left;
+      margin-top: 0;
+      margin-bottom: 15px;
+      color: var(--pink);
+      font-size: 1.8em;
+    }
+
+    .about-content {
+      text-align: center;
+      line-height: 1.7;
+      font-size: 1.1em;
+    }
+
+    .about-content img {
+      width: 100%;
+      max-width: 250px;
+      margin-bottom: 15px;
+      border-radius: 12px;
+      border: 3px solid var(--pink);
+    }
+
+    .about-content a {
+      color: var(--pink);
+      text-decoration: none;
+    }
+
+    .about-content a:hover {
+      text-decoration: underline;
+    }
+
+    .price-image {
+      text-align: center;
+    }
+
+    .price-image img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 12px;
+      border: 3px solid var(--pink);
+    }
+  footer {
+      background-color: var(--black);
+      border-top: 2px solid var(--pink);
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+    footer a {
+      color: var(--pink);
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 900px) {
+      .info-price-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .info-price-block {
+        max-width: 100%;
+      }
+
+      .price-image img {
+        max-width: 300px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-links">
+      <a href="https://t.me/tattooalyaa" target="_blank">Telegram</a> |
+      <a href="https://www.instagram.com/tattooalyaa" target="_blank">Instagram</a>
+    </div>
+    <img src="images/logo.png" alt="tattooalyaa logo" class="logo-image">
+  
+  <div class="site-subtitle">
+    <div class="subtitle-line highlight">Татуировки в Нефтекамске</div>
+    <div class="separator">•</div>
+    <div class="subtitle-line normal">Любые тату по желанию</div>
+  </div>
+  </header>
+
+  <section>
+    <h2>Портфолио</h2>
+    <div class="portfolio-grid">
+      <img src="images/tattoo1.jpg" alt="Тату 1">
+      <img src="images/tattoo2.jpg" alt="Тату 2"><img src="images/tattoo3.jpg" alt="Тату 3">
+      <img src="images/tattoo4.jpg" alt="Тату 4">
+      <img src="images/tattoo5.jpg" alt="Тату 5">
+    </div>
+  </section>
+
+  <section class="info-price-container">
+    <div class="info-price-block">
+      <h2>О мастере</h2>
+      <div class="about-content">
+        <img src="images/photo-albina.jpg" alt="Тату мастер Альбина">
+        <p>
+    Привет! Я тату мастер из Нефтекамска. 
+</p>
+<p>
+Меня зовут Альбина 
+</p>
+<p>
+ Уже больше полутора лет занимаюсь этим любимым делом и постоянно учусь новому.
+  </p>
+  <p>
+    Прошла обучение у <a href="https://instagram.com/sumy_gasumi" target="_blank">@sumy_gasumi</a> и стараюсь подходить к каждому заказу с вниманием и заботой. 
+  </p>
+  <p>
+    Я работаю в уютной студии в Нефтекамске. 
+  </p>
+  <p>
+    Приходите за татуировкой, которая будет радовать вас каждый день!
+  </p>
+        <p><a href="https://yandex.ru/maps/?text=Нефтекамск ул. Строителей 31" target="_blank">Адрес: г. Нефтекамск ул. Строителей 31</a></p>
+      </div>
+    </div>
+
+    <div class="info-price-block">
+      <div class="price-image">
+        <img src="images/price.jpg" alt="Прайс-лист">
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Связаться со мной:
+      <a href="https://t.me/tattooalyaa" target="_blank">Telegram</a> |
+      <a href="https://www.instagram.com/tattooalyaa" target="_blank">Instagram</a>
+    </p>
+  </footer>
+
+</body></html>
