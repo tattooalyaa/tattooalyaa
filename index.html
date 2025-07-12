@@ -218,36 +218,108 @@
         max-width: 300px;
       }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) {@media (max-width: 768px) {
+  header {
+    padding: 20px 10px 0;
+  }
+
+  .header-links {
+    margin-top: 10px;
+  }
+
+  .header-links a {
+    display: inline-block;
+    font-size: 1.4em;
+    margin: 10px;
+    padding: 12px 20px;
+    border: 2px solid var(--pink);
+    border-radius: 8px;
+  }
+
+  .logo-image {
+    height: 200px;
+    margin-top: 15px;
+  }
+
+  .site-subtitle .highlight {
+    font-size: 22px;
+  }
+
+  .site-subtitle .normal {
+    font-size: 18px;
+  }
+
+  .separator {
+    font-size: 24px;
+  }
+
+  section {
+    padding: 10px 15px 20px;
+  }
+
+  section h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+  }
+
   .portfolio-grid {
-    flex-direction: column;
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
   }
 
   .portfolio-grid img {
-    width: 90vw;
-  }
-
-  .about-price {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .about,
-  .price {
-    width: 90%;
-    text-align: center;
-  }
-
-  header .socials {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  header img {
-    max-width: 80vw;
+    width: 45%;
+    max-width: 200px;
     height: auto;
   }
+
+  .info-price-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  .info-price-block {
+    width: 95%;
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .info-price-block h2 {
+    text-align: center;
+    font-size: 1.6em;
+  }
+
+  .about-content {
+    font-size: 1em;
+  }
+
+  .about-content img {
+    max-width: 200px;
+    margin-bottom: 12px;
+  }
+
+  .price-image img {
+    max-width: 95%;
+  }
+
+  footer {
+    padding: 30px 10px;
+    font-size: 1em;
+  }
+
+  footer a {
+    display: inline-block;
+    margin: 8px;
+    font-size: 1.2em;
+    padding: 10px 16px;
+    border: 2px solid var(--pink);
+    border-radius: 6px;
+  }
+}
 }
   </style>
 </head>
