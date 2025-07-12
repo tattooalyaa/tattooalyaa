@@ -11,10 +11,13 @@
       --pink: #f48fb1;
     }
 
- body {
+body {
   margin: 0;
-  background: url('images/background.jpg') no-repeat center center fixed;
-  background-size: cover;
+  background-color: var(--black);
+  background-image: url('images/background.jpg');
+  background-repeat: repeat;
+  background-position: center top;
+  background-size: auto;
   color: var(--white);
   font-family: Arial, sans-serif;
 }
@@ -221,6 +224,28 @@
 }
   
   @media (max-width: 768px) {
+    .portfolio-grid {
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  .portfolio-grid img {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .portfolio-grid img:nth-child(1),
+  .portfolio-grid img:nth-child(2),
+  .portfolio-grid img:nth-child(3),
+  .portfolio-grid img:nth-child(4),
+  .portfolio-grid img:nth-child(5) {
+    margin-top: 10px;
+  }
   header {    padding: 20px 10px 0;
   }
   .header-links {    margin-top: 10px;
